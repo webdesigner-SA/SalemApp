@@ -6,7 +6,7 @@ import { useRouter } from 'expo-router'; // for navigation
 // Array of onboarding screens data (image, title, subtitle)
 const onboardingData = [
   {
-    image: require('../assets/img/onboarding1.png'), // First screen image
+    image: require('../assets/img/Splash1.png'), // First screen image
     title: 'سالم... شريكك في طريق آمن', // First screen title
     subtitle: 'تعرف على أماكن الحفر قبل توصلها.', // First screen subtitle
   },
