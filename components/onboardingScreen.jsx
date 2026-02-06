@@ -6,18 +6,18 @@ import { useRouter } from 'expo-router'; // for navigation
 // Array of onboarding screens data (image, title, subtitle)
 const onboardingData = [
   {
-    image: require('../assets/img/Splash1.png'), // First screen image
+    image: require('../assets/img/onboarding1.png'), // First screen image
     title: 'سالم... شريكك في طريق آمن', // First screen title
     subtitle: 'تعرف على أماكن الحفر قبل توصلها.', // First screen subtitle
   },
   {
-    image: require('../assets/img/Splash3.png'), // Second screen image
+    image: require('../assets/img/onboarding2.png'), // Second screen image
     title: 'خريطتك الأذكى تكشف المخاطر في وقتها', // Second screen title
     subtitle: '', // Second screen subtitle (empty)
   },
   {
-    image: require('../assets/img/Splash2.png'), // Third screen image
-    title: 'تنبيهات فورية قبل ما توصل الحفرة', // Third screen title
+    image: require('../assets/img/onboarding3.png'), // Third screen image
+    title: 'تنبيهات فورية قبل ما توصل للحفرة', // Third screen title
     subtitle: 'نخلي قيادتك أسهل، وأمانك أولوية', // Third screen subtitle
   },
 ];
@@ -61,7 +61,7 @@ const handleNext = () => {
       ) : null}
       
       <View style={styles.dotsContainer}>
-        {onboardingData.map((_, i) => (
+        {onboardingData.map((_, i) => ( // Use map function to loop through each item in the onboardingData array. The first argument (_) is the onboarding screen data (image, title, subtitle), but I don’t use it, so I call it _ , and i is the index for the screen (0, 1, 2).
 
           <View
             key={i} // Give each dot a unique key based on its index.

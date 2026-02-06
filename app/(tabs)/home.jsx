@@ -6,7 +6,6 @@ import { markers } from '../../pointer/markers';
 import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { Ionicons } from '@expo/vector-icons';
 
-
 export default function Home() {
   // State to track if the bottom sheet is collapsed (true if collapsed, false if expanded)
   const [isCollapsed, setIsCollapsed] = useState(false);
