@@ -2,6 +2,7 @@ import React, { useState } from 'react'; // Import useState for state management
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router'; // for navigation
+import { Link } from "expo-router"; 
 
 // Array of onboarding screens data (image, title, subtitle)
 const onboardingData = [
@@ -82,7 +83,10 @@ const handleNext = () => {
         </TouchableOpacity>
 
         <TouchableOpacity onPress={handleSkip} style={styles.skipButton}>
-          <Text style={styles.skipText}>تخطي</Text>
+          <Text style={styles.skipText}>
+             <Link href="/Login">
+                            تخطي
+            </Link></Text>
         </TouchableOpacity>
       </View>
     </View>

@@ -109,9 +109,12 @@ export default function Home() {
               <>
                 <Text style={styles.bottomSheetText}>جاهز لبدء تجربتك مع سالم؟</Text>
                 <TouchableOpacity style={styles.bottomSheetButton}>
-                  <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}>
-                    إبدأ الآن
+                  <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}> 
+                     إبدأ الآن
+                    
+                  
                   </Text>
+                 
                 </TouchableOpacity>
               </>
             )}

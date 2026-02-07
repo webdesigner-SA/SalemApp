@@ -45,5 +45,6 @@ export default function TabLayout() {
       />
       </Tabs>
     </GestureHandlerRootView>
+    
   );
 }
