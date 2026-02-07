@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   // نص تسجيل الدخول  
   inputlog: {
     marginTop:20,
-    marginLeft: 140,
+    marginLeft: 130,
     color: '#4B217F',
     justifyContent: "center",
     alignItems: "center",
@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   },
 inputlog2: {
     marginTop:180,
-    marginLeft: 140,
+    marginLeft: 17,
     color: '#4B217F',
     justifyContent: "center",
     alignItems: "center",
@@ -24,12 +24,12 @@ inputlog2: {
   box: {
   marginTop: 50,
   width: "100%",
-  paddingHorizontal: 40,
+  paddingHorizontal: 25,
 },
   // نص نسيت كلمة المرور
   forget: {
-    marginLeft: 250, 
-    marginTop: 15, 
+    marginLeft: 235, 
+    marginTop: 25, 
     color: '#CE3756',
     fontSize:16,
   },
@@ -40,7 +40,7 @@ inputlog2: {
     width:'90',
     marginBottom: 5,
     marginTop: 20,
-    marginLeft: 300,
+    marginLeft: 270,
   },
   rememberText: {
     marginRight: 5,
@@ -57,8 +57,8 @@ inputlog2: {
   button: {
     backgroundColor: "#4B217F",
     marginTop:50,
-    marginLeft: 110,
-    width:'200',
+    marginLeft: 76,
+    width:'250',
     height: '56',
     borderRadius: 20,
     alignItems: "center",

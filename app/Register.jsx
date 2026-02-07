@@ -58,7 +58,7 @@ const handleRegister = () => {
           value={remember}
           onValueChange={setRemember}
           style={styles.rememberSwitch}
-          trackColor={{ false: "#ccc", true: "#4E046D" }}
+          trackColor={{ false: "#ccc", true: "#4B217F" }}
            thumbColor={remember ? "#fff" : "#f4f3f4"}
         />
         <Text style={styles.rememberText}>تذكرني</Text>

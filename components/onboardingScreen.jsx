@@ -37,7 +37,7 @@ const handleNext = () => {
     setIndex(index + 1); // Go to next screen
   } else {
     // If it's the last screen, go to home
-    router.replace('/(tabs)/home'); // Navigate to home screen
+    router.replace('/(tabs)/home'); // Navigate to home screen لازم تتغير بعدين توديه لتسجيل الدخول 
   }
 };
 

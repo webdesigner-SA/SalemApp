@@ -34,7 +34,7 @@ export default function Phone() {
   return (
     <View style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
       <Text style={styles.inputlog2}>
-        ادخل رقم الجوال{"\n"}لتعيين كلمة السر
+        أدخل رقم الجوال لتعيين كلمة السر الجديدة
       </Text>
 
       <View style={styles.box}>

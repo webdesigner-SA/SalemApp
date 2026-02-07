@@ -7,7 +7,7 @@ export default function Layout() {
         headerTitleAlign: "center",
         headerTintColor: "#FFFFFF",
         headerStyle: {
-          backgroundColor: "#4E046D",
+          backgroundColor: "#4B217F",
         },
         headerTitleStyle: {
           fontSize: 22,
@@ -21,6 +21,35 @@ export default function Layout() {
           headerShown: false, // إخفاء الهيدر العام فوق التابات
         }}
       />
+
+      <Stack.Screen
+        name="index"
+        options={{
+          headerShown: false, // إخفاء الهيدر العام فوق التابات
+        }}
+      />
+
+      <Stack.Screen
+        name="Login"
+        options={{
+        headerTitle: "", // This hides the text in the header
+        }}
+      />
+
+      <Stack.Screen
+        name="Register"
+        options={{
+        headerTitle: "", // This hides the text in the header
+        }}
+      />
+
+      <Stack.Screen
+        name="Phone"
+        options={{
+        headerTitle: "", // This hides the text in the header
+        }}
+      />
+
     </Stack>
   );
 }
