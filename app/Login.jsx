@@ -9,7 +9,7 @@ import { auth, db } from "../firebase/firebase";
 import { router } from "expo-router";
 
 
-export default function Home() {
+export default function Login() {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
