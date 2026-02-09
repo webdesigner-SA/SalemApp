@@ -2,8 +2,9 @@ import { Text, View, StyleSheet, TextInput, TouchableOpacity } from "react-nativ
 import { styles } from "../style/loginstyle";
 import ThemedTextInput from "../components/ThemedTextInput";
 import { useState } from "react";
-import { Link } from "expo-router";
+import { Link, useRouter } from "expo-router";
 import { validatePhoneOnly, validateOTP } from "../style/Validation";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Phone() {
   const [phone, setPhone] = useState("");
@@ -11,6 +12,8 @@ export default function Phone() {
   const [showPopup, setShowPopup] = useState(false);
   const [code, setCode] = useState("");
   const [otpErrors, setOtpErrors] = useState({});
+
+    const router = useRouter(); 
 
   const handleRegister = () => {
     const validationErrors = validatePhoneOnly(phone); // ← هنا التعديل
@@ -33,9 +36,25 @@ export default function Phone() {
 
   return (
     <View style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
-      <Text style={styles.inputlog2}>
-        أدخل رقم الجوال لتعيين كلمة السر الجديدة
-      </Text>
+
+      {/* Back Arrow Button */}
+      <TouchableOpacity
+        onPress={() => router.push("/Login")}
+        style={styles.backArrow}
+      >
+        <Ionicons name="arrow-back" size={28} color="#fff" />
+      </TouchableOpacity>
+
+      <View style={styles.container}>
+
+        <View style={styles.containerCard}>
+
+          <Text style={styles.inputlog2}>
+            أدخل رقم الجوال لتعيين كلمة السر
+          </Text>
+          <Text style={[styles.inputlog2, {textAlign: "center", marginTop: 8}]}>
+            الجديدة
+          </Text>
 
       <View style={styles.box}>
         <ThemedTextInput
@@ -89,6 +108,9 @@ export default function Phone() {
           </View>
         </View>
       )}
+
+        </View>
+      </View>
     </View>
   );
 }

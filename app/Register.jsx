@@ -31,6 +31,12 @@ const handleRegister = () => {
    
 <View style={{ flex: 1, backgroundColor: "#FFFFFF" }}> 
 
+   <View style={styles.container}>
+
+      <Text style={styles.inputlog}>سجل الآن !!</Text>
+
+     <View style={styles.containerCard}>
+
 
      <View style={styles.box}>
         <ThemedTextInput placeholder="الاسم" value={name} onChangeText={setName} />
@@ -81,6 +87,9 @@ const handleRegister = () => {
       </Link>
       </Text>
 
+      </View>
+
+</View>
     </View>
   );
 }

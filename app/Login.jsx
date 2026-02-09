@@ -27,15 +27,11 @@ export default function Home() {
   return (
     <View style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
      
-     {/* icon of user */}
-       <FontAwesome
-          name="user-circle" 
-          size={50}
-          color="#8c8c8d"
-          style={{ alignSelf: "center", marginTop: 85, marginBottom: 3 }}
-        />
+    <View style={styles.container}>
 
       <Text style={styles.inputlog}>تسجيل الدخول</Text>
+
+    <View style={styles.containerCardLogin}>
 
       <View style={styles.box}>
         <ThemedTextInput
@@ -70,6 +66,10 @@ export default function Home() {
            سجل الآن
         </Link>
       </Text>
+
+    </View>
+    
+    </View>
 
     </View>
   );

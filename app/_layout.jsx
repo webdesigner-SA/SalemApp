@@ -33,6 +33,7 @@ export default function Layout() {
         name="Login"
         options={{
         headerTitle: "", // This hides the text in the header
+        headerShown: false,
         }}
       />
 
@@ -40,6 +41,7 @@ export default function Layout() {
         name="Register"
         options={{
         headerTitle: "", // This hides the text in the header
+        headerShown: false,
         }}
       />
 
@@ -47,6 +49,7 @@ export default function Layout() {
         name="Phone"
         options={{
         headerTitle: "", // This hides the text in the header
+        headerShown: false,
         }}
       />
 
